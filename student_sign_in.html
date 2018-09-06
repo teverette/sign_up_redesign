@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Teacher Sign In</title>
+	  <link href="css/style.css" rel="stylesheet" />
+	  <style>
+		.student-login-body {background-image: url('images/Pattern.svg'); background-repeat: repeat-x;}
+	  </style>
+	  <script src="../js/jquery.js"></script>
+	  <script>
+	  $( document ).ready(function() {
+	  	$(".google-sso").click(function(){
+	  		$(".google-sso-error").toggle();
+	  	});
+	  	$(".clever-sso").click(function(){
+	  		$(".clever-sso-error").toggle();
+	  	});
+	  });
+	  </script>
+	</head>
+	<body class="student-login-body ">
+		<div class="student-login">
+			<div class="login-top">
+				<img src="images/fc-thinkcerca-logo.png"/>
+				<h3 class="header-title">Student Login</h3>
+				<p class="header-sub-title">Ready to learn? Log in to work on your assignments and 
+					master those critical thinking skills.</p>
+			</div>
+			<div class="login-action">
+				<a href="#" class="login-button google-sso"><img src="images/Google_logo.png"/><span class="log-in-with-google">Log in With Google</span></a>
+				<div class="google-sso-error">Looks like you don't have a ThinkCERCA account yet. Please contact your teacher to access your login information.</div>
+				<br/>
+				<a href="#" class="login-button clever-sso"><img src="images/clever-logo.png"/><span class="log-in-with-google">Log in With Clever</span></a>
+				<div class="clever-sso-error">Looks like you don't have a ThinkCERCA account yet. Please contact your teacher to access your login information.</div>
+				<p>or <a href="student_manual_sign_in.html" class="text-link">Log in using your email</a></p>
+			</div>
+			<div class="login-bottom">
+				<a href="teacher_sign_in.html" class="text-link muted-link">Are you a teacher or admin?</a>
+			</div>
+		</div>
+	</body>
+</html>
+

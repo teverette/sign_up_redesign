@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Teacher Sign In</title>
+	  <link href="css/style.css" rel="stylesheet" />
+	  <style>
+
+	  </style>
+	  <script src="../js/jquery.js"></script>
+	  <script>
+	  $( document ).ready(function() {
+	  	$(".pwd").blur(function(){
+	  		if($(this).val.length>0) {
+	  			$(this).addClass("sensitive");
+	  		}
+	  	});
+		$(".form-button").click(function(){
+			$(".pwd-error").show();
+			$(".form-field").addClass("error");
+		})
+	  });
+	  </script>
+	</head>
+	<body class="manual-login-body ">
+		<div class="manual-login">
+			<div class="login-action">
+				<h2 class="page-title-copy">Welcome back!</h2>
+				<p class="page-sub-title">Enter your faculty email and password to access your account.</p>
+				<fieldset>
+					<span class="field-error pwd-error">Hold up! Looks like you don't have a ThinkCERCA account yet. Please <a href="#" class="text-link">sign up</a>.</span>
+					<input class="form-field" name="email" placeholder="Enter Your Email"></input>
+				</fieldset>
+				<fieldset>	
+					<span class="field-error pwd-error">Oops, that password is incorrect. Please try again or <a href="#" class="text-link">reset your password</a>.</span>
+					<input class="form-field pwd" name="pwd" type="password" placeholder="Enter Your Password"></input>
+				</fieldset>
+				<button class="form-button">Log In</button>
+				<a href="#" class="text-link text-button-spacer">Forgot your password?</a>
+			</div>
+		</div>
+	</body>
+</html>

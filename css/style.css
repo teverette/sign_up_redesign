@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+ .teacher-login-body { background-color: #4A4A4A; background: linear-gradient(180deg, #707070 0%, #4A4A4A 100%); }
+ .teacher-login, .student-login {
+ 	background-color: #FFF; width:588px; height: 573px; margin:164px auto; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25); border-radius: 4px;
+ }
+ .login-top {height:222px; padding:45px 98px 0; background-color:lightgray; text-align:center;border-radius: 4px 4px 0 0}
+ .header-title	{
+	height: 32px;
+	color: #FFFFFF;
+	font-family: "Roboto Slab";
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	margin:20px 0 12px;
+}
+.header-sub-title {
+	height: 40px;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 0;
+}	
+.login-button {
+	height: 48px;
+	width: 266px;
+	border: 1px solid #407CBE;
+	border-radius: 4px;
+	background-color: #307FE2;
+	display:inline-block;
+	text-align:left;
+	margin-bottom:15px;
+	
+}
+.log-in-with-google {
+	height: 24px;
+	width: 171px;
+	color: #FFFFFF;
+	font-family: "Roboto Slab";
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	display:inline-block;
+	margin-left: 20px;
+	vertical-align:top;
+	height:100%;
+	margin-top: 12px;
+	
+}
+.login-action {text-align:center; padding:24px;color:#58595B;}
+.login-bottom {text-align:center; background-color:#F5F5F5; height:60px; padding-top:17px;border-radius: 0 0 4px 4px}
+
+a.text-link {
+	height: 24px;
+	width: 588px;
+	color: #307FE2;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration:none;
+}
+
+a.muted-link {color:#58595B}
+
+.login-bottom a.button {
+	display:inline-block;
+	height: 40px;
+	width: 148px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	vertical-align:middle;
+	color:#58595B;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 24px;
+	text-decoration:none;
+}
+.login-bottom a.button:hover, .muted-link:hover {color: #307FE2}
+a.button span {display: inline-block; padding-top: 8px}
+
+/* student login additions */
+.student-login-body { background-color: #0A4BB8; }
+.student-login-body .login-top {background-color:#FFF}
+.student-login-body .header-title,
+.student-login-body .header-sub-title {color: #58595B;}
+.student-login-body .login-top {height:192px}
+.student-login {height:543px}
+
+.google-sso-error, .clever-sso-error {
+	height: 54px;
+	width: 266px;
+	color: #DE2527;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 18px;
+	display:none;
+	text-align:center;
+	margin:0 auto;
+}
+			
+/* manual login */
+ .manual-login {width:588px; height:510px;background-color:#fff; margin:0 auto; }
+ .manual-login-body {background: linear-gradient(180deg, #707070 0%, #4A4A4A 100%); background-color: #4A4A4A; padding:164px 0; min-height:800px;overflow:hidden;}
+ .page-title-copy {
+	height: 32px;
+	color: #58595B;
+	font-family: "Roboto Slab";
+	font-size: 24px;
+	line-height: 32px;font-weight:400;
+}
+.page-sub-title {
+	height: 16px;
+	width: 446px;
+	color: #58595B;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align:left;
+}
+.manual-login .login-action {padding-top:72px; padding-left:80px; margin-bottom:28px; text-align:left}
+
+.form-field  {
+	height: 40px;
+	width: 266px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	margin-bottom:15px;
+	color: #58595B;
+	font-family: "Roboto Slab";
+	font-size: 14px;
+	line-height: 24px; padding-left:11px;
+}
+
+::placeholder {color: #CCCCCC;
+	font-family: "Roboto Slab";
+	font-size: 14px;
+}
+.sensitive {background: url(images/eye-icon.svg) no-repeat scroll 250px 12px;}
+fieldset {border:none; padding:0}
+.form-field.error {
+	border: 1px solid #DE2527; background-color: #FFFFFF;
+}
+.form-button {
+	height: 40px;
+	width: 76px;
+	border: 1px solid #407CBE;
+	border-radius: 4px;
+	background-color: #307FE2;
+	color: #FFFFFF;
+	font-family: "Roboto Slab";
+	font-size: 14px;
+	line-height: 21px;
+	cursor:pointer;
+}
+.text-button-spacer {margin-left:20px}
+.field-error {
+	color: #DE2527;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 18px;
+	float:right; width: 180px; height:52px; display:inline-block;
+	display:none;
+}
